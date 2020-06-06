@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="MenuApp">
+        <head>
+                <title>Menu</title>
+                <meta charset="UTF-8">
+                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body >
+                 <h1>Our Restaurant Menu</h1>
+                 <br>
+                 <hr>
+                 <br>
+                <ui-view></ui-view>
+
+                <!--Libraries-->
+                <script type="text/javascript" src="lib/angular.min.js"></script>
+                <script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
+
+                <!--Modules-->
+                <script type="text/javascript" src="src/menuapp/menuapp.module.js"></script>
+                <script type="text/javascript" src="src/menuapp/data.module.js"></script>
+
+                <!--Routes-->
+                <script type="text/javascript" src="src/routes.js"></script>
+
+                <!--Artifacts-->
+                <script type="text/javascript" src="src/menuapp/menudata.service.js"></script>
+                <script type="text/javascript" src="src/menuapp/categories.component.js"></script>
+                <script type="text/javascript" src="src/menuapp/categories.controller.js"></script>
+                <script type="text/javascript" src="src/menuapp/items.component.js"></script>
+                <script type="text/javascript" src="src/menuapp/items.controller.js"></script>
+
+        </body>
+</html>
