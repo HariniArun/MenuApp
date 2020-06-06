@@ -3,6 +3,6 @@
     <li ng-repeat="item in $ctrl.items"
         ui-sref="items({categoryShortName: item.short_name})" class="list-group-item list-group-item-action">
       {{$index}}  -({{ item.short_name}}) {{ item.name}} <br><br>
-      {{ item.special_instructions}}
+
     </li>
   </ul>
